@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL to Voice Converter - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="water-effect">
+            <div class="row">
+                <div class="col">
+                    <h1><div class="smoke" >
+                        <ul>
+                            
+                            <li>A</li><li>S</li><li>L</li>
+                            <li>T</li><li>O</li>
+                            <li>V</li><li>O</li><li>I</li><li>C</li><li>E</li>
+    
+                        </ul> 
+                               
+                         </div>
+                    
+                   
+                </div>
+                    <div class="col"></div>
+            </div>
+        </div>
+    
+        <nav class="nav-buttons">
+            
+            <button onclick="location.href='#faq'">FAQ</button>
+            <button onclick="location.href='home.html'">Let's Start</button> <!-- Link to the Home page -->
+        </nav>
+    </header>
+
+  
+    <section class="section-content">
+        <h2 class="subtitle">Dive into ASL to Voice Conversion</h2>
+        <p>Sign with your hands, let your voice be heard,<br>
+            ASL to Voice, the world to be stirred!</p>
+        <p>Sign language to spoken words with ease...<br> Right from your browser, no fuss, just sign and speak!!!</p>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)">What is ASL to Voice?</h3>
+            <p class="faq-answer">ASL to Voice is a web application that converts American Sign Language gestures into spoken words using your webcam.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)">How does it work?</h3>
+            <p class="faq-answer"> The app interprets hand gestures and provides spoken text in real-time. It's designed for ease of use, regardless of your tech background.</p>
+        </div>
+        
+    </section>
+
+   
+    <script>
+        
+        document.querySelector('button[onclick="location.href=\'#faq\'"]').addEventListener('click', function () {
+    const faqSection = document.getElementById('faq');
+    faqSection.classList.add('show');
+});
+
+        
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

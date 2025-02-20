@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="h1">HAND GESTURE RECOGNITION</h1>
+        <div id="video-container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="controls">
+            <button id="start">Start</button>
+            <button id="detect" disabled>Detect</button>
+            <button id="stop" disabled>Stop</button>
+            <button id="speak" disabled>Speak</button>
+            <button id="retake"disabled>Retake</button>
+        </div>
+        <p id="result">DETECTED TEXT:</p>
+    </div>
+    
+    <script src="new_script.js"></script>
+</body>
+</html>

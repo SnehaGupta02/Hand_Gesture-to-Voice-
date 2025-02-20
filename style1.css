@@ -1,0 +1,112 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/frontend/background.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  
+  backdrop-filter: blur(1.8px);
+ 
+}
+
+
+.container {
+  text-align: center;
+  
+  
+}
+
+#video-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+video, canvas {
+  border: 20px solid rgb(22, 76, 83);
+  border-style:groove;
+  width: 1000px;
+  height: 600px;
+  background-color: transparent;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+
+#controls {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: cursive;
+  cursor: pointer;
+  
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+#result, #start, #detect, #stop, #retake, #speak {
+  
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#start{
+  background-color: paleturquoise;
+}
+#detect{
+  background-color: pink;
+}
+#stop{
+  background-color: lightcyan;
+}
+#retake{
+  background-color: lightsalmon;
+}
+#speak{
+  background-color: lightslategray;
+}
+#result {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);;
+}
+#h1{
+  font-size: 40px; 
+  font-family:cursive; 
+  font-weight: bold; 
+  
+  text-shadow: 5px 3px 3px teal;
+  color:lightgoldenrodyellow; 
+ 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px;
+  border-radius: 10px; 
+}
